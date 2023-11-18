@@ -364,7 +364,7 @@
         /// </summary>
         public void Zoom(float zoom)
         {
-            float z = 1 + zoom <= 0 ? -0.1f : 0.1f;
+            float z = zoom < 0 ? (1 + -0.1f) : (1 +0.1f);
 
             float[,] matrix =
             {

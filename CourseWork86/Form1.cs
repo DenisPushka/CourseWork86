@@ -313,7 +313,7 @@ namespace CourseWork86
             var size = (float)numericForPolinom.Value;
             _figure.Vertexes = new List<Vertex>
             {
-                new(e.X - size, e.Y - size), 
+                new(e.X - size, e.Y - size),
                 new(e.X, e.Y - size),
                 new(e.X, e.Y),
                 new(e.X + size, e.Y),
@@ -338,9 +338,8 @@ namespace CourseWork86
         }
 
         /// <summary>
-        /// Кривая Безье
+        /// Кривая Безье.
         /// </summary>
-        /// <returns></returns>
         private void DrawBezier()
         {
             const double dt = 0.01;
@@ -368,6 +367,7 @@ namespace CourseWork86
                 yPred = y;
             }
 
+            _figure.IsFunction = true;
             _figure.Vertexes = newFigure;
         }
 

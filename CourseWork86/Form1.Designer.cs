@@ -169,6 +169,7 @@
             // 
             Angle.Location = new Point(953, 322);
             Angle.Name = "Angle";
+            Angle.ReadOnly = true;
             Angle.Size = new Size(100, 23);
             Angle.TabIndex = 11;
             // 
